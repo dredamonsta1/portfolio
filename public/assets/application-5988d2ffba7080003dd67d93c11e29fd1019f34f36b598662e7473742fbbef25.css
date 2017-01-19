@@ -1,0 +1,66 @@
+/* line 6, /vagrant/andrewilkinson/fullstack/app/assets/stylesheets/andres.scss */
+.container {
+  background-color: #686c70;
+}
+
+/* line 11, /vagrant/andrewilkinson/fullstack/app/assets/stylesheets/andres.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ceb3a7;
+}
+
+/* line 19, /vagrant/andrewilkinson/fullstack/app/assets/stylesheets/andres.scss */
+ul li {
+  float: left;
+}
+
+/* line 22, /vagrant/andrewilkinson/fullstack/app/assets/stylesheets/andres.scss */
+ul li a {
+  display: block;
+  color: #dbcbc5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* line 30, /vagrant/andrewilkinson/fullstack/app/assets/stylesheets/andres.scss */
+ul li a:hover:not(.active) {
+  background-color: #b26645;
+}
+
+/* line 32, /vagrant/andrewilkinson/fullstack/app/assets/stylesheets/andres.scss */
+ul li a {
+  background-color: #4588b2;
+}
+
+/* line 34, /vagrant/andrewilkinson/fullstack/app/assets/stylesheets/andres.scss */
+ul li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 37, /vagrant/andrewilkinson/fullstack/app/assets/stylesheets/andres.scss */
+  ul li.right,
+  ul li {
+    float: none;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
