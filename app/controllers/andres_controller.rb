@@ -1,10 +1,10 @@
 class AndresController < ApplicationController
   def index
-    render('index')
+    render 'index'
   end
 
   def projects
-    render('projects')
+    render 'projects'
   end
 
   def resume
