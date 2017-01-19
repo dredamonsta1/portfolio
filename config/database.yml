@@ -7,3 +7,4 @@ default: &default
 
 production:
   <<: *default
+  database: my_app_development
