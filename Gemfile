@@ -35,7 +35,7 @@ gem 'react-rails', '~> 1.0'
 gem 'social-share-button'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'rails_12factor'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
