@@ -10,7 +10,7 @@ class UserMailer < ApplicationMailer
 
 
 
-      mail to: 'andrefullstack@gmail.com', subject: @subject 
+      mail to: 'andrefullstack@gmail.com', subject: @subject
     end
 
 end
