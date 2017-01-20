@@ -8,8 +8,10 @@ class AndresController < ApplicationController
   end
 
   def resume
+    render 'resume'
   end
 
   def contact
+    render 'contact'
   end
 end

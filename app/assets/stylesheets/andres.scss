@@ -2,42 +2,165 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//
+// .container {
+// background-color: #686c70;
+//
+// }
+//
+// ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+//     background-color: #ceb3a7;
+// }
+//
+// ul li {float: left;}
+//
+//
+// ul li a {
+//     display: block;
+//     color: #dbcbc5;
+//     text-align: center;
+//     padding: 14px 16px;
+//     text-decoration: none;
+// }
+//
+// ul li a:hover:not(.active) {background-color: #b26645;}
+//
+// ul li a {background-color: #4588b2;}
+//
+// ul li.right {float: right;}
+//
+// @media screen and (max-width: 600px){
+//     ul li.right,
+//     ul li {float: none;}
+// }
 
-.container {
-background-color: #686c70;
-
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ceb3a7;
-}
-
-ul li {float: left;}
-
-
-ul li a {
-    display: block;
-    color: #dbcbc5;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul li a:hover:not(.active) {background-color: #b26645;}
-
-ul li a {background-color: #4588b2;}
-
-ul li.right {float: right;}
-
-@media screen and (max-width: 600px){
-    ul li.right,
-    ul li {float: none;}
-}
 
 // p{
 //   margin-top: 300;
 // }
+
+
+// ************body***************
+
+.container {
+background-color: #686c70;
+background-image: image-url('mam_icon.png');
+}
+//
+// .backtoback {
+//   background-color: #686c70;
+// }
+// ******************sidenav**********************
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ceb3a7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4588b2;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #b26645;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.container1 {
+
+    position: relative;
+    background-image: image-url('mam_icon.png');
+}
+
+.center {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+
+
+
+div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}

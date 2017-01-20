@@ -3,25 +3,63 @@
 <head>
   <title>Fullstack</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= favicon_link_tag 'hourglassAW.jpg' %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
+  <!-- <div class="container">
 
     <ul>
       <li><a href='/index'>Home</a></li>
       <li><a href='/projects'>Projects</a></li>
       <li><a href='/resume'>Resume</a></li>
       <li class="right"><a href='/contact'>Contact</a></li>
-    </ul>
-    <%= yield %>
+    </ul> -->
 
+
+  <!-- </div> -->
+
+<div class="container">
+
+<!-- *************sidenav************** -->
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href='/index'>Hello</a>
+    <a href='/projects'>Projects</a>
+    <a href='/resume'>Resume</a>
+    <a href='/contact'>Contact</a>
   </div>
+
+  <div id="main">
+    <div class="center"><h2>THE RABBIT HOLE</h2>
+    <p>Welcome to endless posibilities</p></div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  </div>
+
+  <script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+<%= yield %>
+<div class="container1">
+  <img src="js.png" alt="Norway" width="1000" height="300">
+  <div class="center">My Resume</div>
+</div>
+</div>
+
 
 </body>
 </html>
