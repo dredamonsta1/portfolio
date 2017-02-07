@@ -7,7 +7,7 @@ gem 'rails', '4.2.7.1'
 group :production do
   gem 'pg'
 end
-
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'

@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   get '/index' => 'andres#index'
 
-  get '/projects' => 'andres#projects'
+  get '/projects/andre' => 'andres#projects'
 
   get '/resume' => 'andres#resume'
 
   get '/contact' => 'contacts#new'
-  
+
   post '/contact' => 'contacts#message'
 
   # The priority is based upon order of creation: first created -> highest priority.
