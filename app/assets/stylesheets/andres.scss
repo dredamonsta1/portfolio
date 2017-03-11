@@ -152,41 +152,37 @@ input[type=button] {width: auto; overflow: visible;}
 .clearfix { zoom: 1; }
 
 
-//
-// .container {
-// background-color: #686c70;
-//
-// }
-//
-// ul {
-//     list-style-type: none;
-//     margin: 0;
-//     padding: 0;
-//     overflow: hidden;
-//     background-color: #ceb3a7;
-// }
-//
-// ul li {float: left;}
-//
-//
-// ul li a {
-//     display: block;
-//     color: #dbcbc5;
-//     text-align: center;
-//     padding: 14px 16px;
-//     text-decoration: none;
-// }
-//
-// ul li a:hover:not(.active) {background-color: #b26645;}
-//
-// ul li a {background-color: #4588b2;}
-//
-// ul li.right {float: right;}
-//
-// @media screen and (max-width: 600px){
-//     ul li.right,
-//     ul li {float: none;}
-// }
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ceb3a7;
+}
+
+ul li {float: left;}
+
+
+ul li a {
+    display: block;
+    color: #dbcbc5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover:not(.active) {background-color: #b26645;}
+
+ul li a {background-color: #4588b2;}
+
+ul li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul li.right,
+    ul li {float: none;}
+}
 
 
 // p{
@@ -195,180 +191,131 @@ input[type=button] {width: auto; overflow: visible;}
 
 
 // ************body***************
-// * {
-//   height: 0;
-//   width: 0;
+.whole{
+  height:200px;
+}
+.navbar{
+height: 100px;
+width: 100%;
+background-color: #BCAAA4;
+border: 1px dotted green;
+margin-bottom: 100px;
+z-index: auto;
+// opacity: .3;
+position: fixed;
+}
+
+// .navbar a{
+// height: 100px;
+// width: auto;
+// background-color: #BCAAA4;
+// border: 1px dotted green;
+// margin-bottom: 100px;
+// z-index: 20;
+// // opacity: .3;
 // }
-.container {
-background-color: #26A69A;
-// background-image: image-url('mam_icon.png');
+
+.bottombar{
+height: 100px;
+margin-top: 600px;
+background-color: #FFC107;
+border: 1px dotted blue;
+  /*z-index: 3;*/
+z-index: auto;
 }
+
+
+
+
+
 //
-.backtoback {
-  background-color: #4DB6AC;
-}
+// .backtoback {
+//   background-color: white;
+// }
 // ******************sidenav**********************
 
-
-body {
-    font-family: "Lato", sans-serif;
+CSS selector {
+  font-family: 'Quicksand', serif;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #E0F2F1;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+CSS selector {
+  font-family: 'Amatic SC', serif;
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #00796B;
+body .navbar {
+    font-family: "quicksand", sans-serif;
+    font-weight: bold;
+    font-size:3em;
+    // border: 2px dotted red;
+    text-align: right;
+
+
+}
+
+body .bottombar {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size:1em;
+    border: 2px dotted yellow;
     display: block;
-    transition: 0.3s
+    text-align: center;
+}
+.me {
+  font-size: 3em;
+  font-family: "quicksand", sans-serif;
+  // border: 2px dotted blue;
+  text-align: center;
 }
 
-.sidenav a:hover, .offcanvas a:focus{
-    color: #FFD180;
+.about{
+  font-size: 1em;
+  font-family: "quicksand", sans-serif;
+  text-align: center;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+.about_res{
+  font-size: 3em;
+  font-family: "quicksand", sans-serif;
+  text-align: center;
 }
 
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
+.PD{
+  font-size: 3em;
+  font-family: "quicksand", sans-serif;
+  text-align: center;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.fullstack {
+  font-size: 2.5em;
+  font-family: "quicksand", sans-serif;
+  // border: 2px dotted blue;
+  text-align: center;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("sea_shoe.JPG");
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
-// .container1 {
-//
-//     position: relative;
-    // background-image: image-url('mam_icon.png');
+// div.polaroid1 {
+//   width: 250px;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//   text-align: center;
 // }
 
-.center {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-}
-
-// img {
-//     width: 100%;
-//     height: auto;
-//     opacity: 0.3;
+// div.cspace {
+//   padding: 10px;
 // }
-
-
-
-
-#div1 {
-    text-align: center;
-    padding-top: 26px;
-    width: 90px;
-    height: 40px;
-    border-radius: 11px;
-    background-color: red;
-    opacity: 0.5;
-    font-weight: bold;
-    position: relative;
-    -webkit-animation: mymove 5s 5; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s 5;
-}
-
-
-#div2 {
-    text-align: center;
-    padding-top: 26px;
-    width: 90px;
-    height: 50px;
-    border-radius: 11px;
-    background-color: red;
-    opacity: 0.5;
-    font-weight: bold;
-    position: relative;
-    -webkit-animation: mymove 5s 4; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s 4;
-}
-
-
-#div3 {
-    text-align: center;
-    padding-top: 26px;
-    width: 100px;
-    height: 50px;
-    border-radius: 11px;
-    background-color: #F9A825;
-    opacity: 0.5;
-    font-weight: bold;
-    position: relative;
-    -webkit-animation: mymove 5s 3; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s 3;
-}
-
-
-#div4 {
-    text-align: center;
-    padding-top: 26px;
-    width: 50px;
-    height: 50px;
-    border-radius: 11px;
-    background-color: red;
-    // opacity: 0.5;
-    font-weight: bold;
-    position: relative;
-    -webkit-animation: mymove 5s 2; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s 2;
-}
-
-
-#div5 {
-    text-align: center;
-    padding-top: 26px;
-    width: 90px;
-    height: 40px;
-    border-radius: 11px;
-    background-color: #E0F2F1;
-    // opacity: 0.5;
-    font-weight: bold;
-    position: relative;
-    -webkit-animation: mymove 5s 1; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s 1;
-}
-
-/* Safari 4.0 - 8.0 */
-#div1 {-webkit-animation-timing-function: linear;}
-#div2 {-webkit-animation-timing-function: ease;}
-#div3 {-webkit-animation-timing-function: ease-in;}
-#div4 {-webkit-animation-timing-function: ease-out;}
-#div5 {-webkit-animation-timing-function: ease-in-out;}
-
-/* Standard syntax */
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
@@ -380,4 +327,28 @@ body {
 @keyframes mymove {
     from {left: 0px;}
     to {left: 100%;}
+}
+
+// *********************test***********
+
+
+.parallax {
+    /* The image used */
+    background-image: url('sea_shoe.JPG');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }

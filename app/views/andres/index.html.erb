@@ -1,19 +1,51 @@
 <!-- <h1>Andres#index</h1>
 <p>Find me in app/views/andres/index.html.erb</p> -->
-<!-- navbar -->
+<!-- ************test******************* -->
+  <div class="me">
+    <h1>Welcome to AndreWilkinson.com</h1>
+    <p> </p>
+
+  </div>
+
+<div class="about">
+<h6 class="resume"><a href='#resume'>Resume</a></h6>
+</div>
+
+<div class="about_res">
+<h1>this is a pdf version of my resume click take a look </h1>
+</div>
+
+
+ <div class="PD">
+<%= link_to "My Resume", asset_path("andrefullstackRa.pdf"), :class => "links" %>
+</div>
+
+<h6><a href='#resume'>Resume</a></h6>
 
 
 
 
-<h5><div id="div1">hello</div></h5>
-<h5><div id="div2"><a href='/index'>Andre</a></div></h5>
-<h5><div id="div3"><a href='/projects'>Projects</a></div></h5>
-<h5><div id="div4"><a href='/resume'>Resume</a></div></h5>
-<h5><div id="div5"><a href='/contact'>Contact</a></div></h5>
+<div class="parallax"></div>
 
-<!-- 
-<div class="container1">
-  <img src="js.png" alt="Norway" width="1000" height="300">
-  <div class="center">THE RABBIT HOLE</div>
-</div> -->
-<h6><a href='#top'>top</a></h6>
+<div style="height:500px;background-color:#FFECB3;font-size:36px">
+  <div class="fullstack">
+    Im a full stack dev with a passion for this field, a bonsai enthusist and a sneaker collector
+  </div>
+</div>
+<h6><a href='#tech'>Tech</a></h6>
+<%= image_tag "css_icon.png" %>
+<%= image_tag "ang_icon.png" %>
+<%= image_tag "djang_icon.png" %>
+
+
+<p>In this example we have turned off parallax scrolling for mobile devices. It works as expected on all desktop screens sizes.</p>
+<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+
+<div class="parallax"></div>
+
+<div style="height:400px;background-color:red;font-size:36px">
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<div class="parallax"></div>

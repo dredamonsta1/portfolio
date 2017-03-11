@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
+mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
   get '/index' => 'andres#index'
 
-  get '/projects/andre' => 'andres#projects'
+  get '/projects' => 'andres#projects'
 
   get '/resume' => 'andres#resume'
 
   get '/contact' => 'contacts#new'
 
   post '/contact' => 'contacts#message'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

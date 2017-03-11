@@ -11,6 +11,9 @@ class AndresController < ApplicationController
     render 'resume'
   end
 
+
+
+
   def contact
     render 'contact'
   end

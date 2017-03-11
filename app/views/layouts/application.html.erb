@@ -4,62 +4,60 @@
   <title>Fullstack</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
   <%= favicon_link_tag 'hourglassAW.jpg' %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Quicksand" rel="stylesheet">
 </head>
 <body>
-  <!-- <div class="container">
-
-    <ul>
-      <li><a href='/index'>Home</a></li>
-      <li><a href='/projects'>Projects</a></li>
-      <li><a href='/resume'>Resume</a></li>
-      <li class="right"><a href='/contact'>Contact</a></li>
-    </ul> -->
-
-
-  <!-- </div> -->
-
-<div class="container">
-<!-- ************sidenav************** -->
-
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href='/index'>Hello</a>
-    <a href='/projects'>Projects</a>
-    <a href='/resume'>Resume</a>
-    <a href='/contact'>Contact</a>
+<div class="whole">
+      <!-- ************navbar************** -->
+  <div class= "navbar">
+    <!-- <h3>Welcome to AndreWilkinson.com</h3> -->
+    <div class="container3">
+      <div id="mySidenav"      class="sidenav">
+        <a href='/index'>Home</a>|
+        <a href='/projects'>Sneakers</a>|
+        <a href='/resume'>Bonsai</a>|
+        <a href='/contact'>Contact</a>
+      </div>
+    </div>
   </div>
-<!-- </div> --> too many divs
+  <!-- <div class="me">
+    <h1>Hi welcome to AndreWilkinson.com</h1>
+    <p></p>
 
-  <!-- <div id="main"> -->
-    <!-- <div class="center"><h2>THE RABBIT HOLE</h2> -->
-    <!-- <p>Welcome to endless posibilities</p></div> -->
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; AndreWilkinson.com</span>
-  <!-- </div> -->
+  </div> -->
+  <div class="container-fluid">
+    <%= yield %>
+  </div>
+  <div class="bottombar">
+    <a href="http://twitter.com/home?status=SHAREMESSAGE" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
 
-  <script>
-  function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-  }
+     <!-- Facebook -->
+    <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a> -->
 
-  function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
-  }
-  </script>
-<%= yield %>
-<div class="container1">
-  <img src="../../../assets/images/js.png" alt="Norway" width="1000" height="300">
-  <div class="center">My Resume</div>
+    <!-- Google+ -->
+    <!-- <a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a> -->
+
+    <!-- StumbleUpon -->
+    <!-- <a href="http://www.stumbleupon.com/submit?url=SHAREMESSAGE" title="Share on StumbleUpon" target="_blank" data-placement="top" class="btn btn-stumbleupon"><i class="fa fa-stumbleupon"></i> Stumbleupon</a> -->
+
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=SHAREMESSAGE" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+
+    <h6><a href='#top'>top</a></h6>
+
+
+    <!-- <h6><a href='#top'>top</a></h6> -->
+
+  </div>
 </div>
- </div>
-
-
 </body>
 </html>

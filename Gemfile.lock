@@ -96,6 +96,9 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
+    pdfjs_viewer-rails (0.0.9)
+      rails (> 4.2.0)
+      sass-rails (~> 5.0)
     pg (0.19.0)
     rack (1.6.5)
     rack-test (0.6.3)
@@ -117,8 +120,6 @@ GEM
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6)
       rails-deprecated_sanitizer (>= 1.0.1)
-    rails-footnotes (4.1.8)
-      rails (>= 3.2)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     rails_12factor (0.0.3)
@@ -188,10 +189,11 @@ DEPENDENCIES
   hirb
   jbuilder (~> 2.0)
   jquery-rails
+  json (~> 1.8.1)
   paperclip (~> 4.3, >= 4.3.6)
+  pdfjs_viewer-rails
   pg
   rails (= 4.2.7.1)
-  rails-footnotes (>= 4.0.0, < 5)
   rails_12factor
   react-rails (~> 1.0)
   sass-rails (~> 5.0)
