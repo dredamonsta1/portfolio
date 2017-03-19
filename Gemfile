@@ -11,6 +11,11 @@ gem 'paperclip', '~> 4.3', '>= 4.3.6'
 # Use SCSS for stylesheets
 gem 'pdfjs_viewer-rails'
 
+# gem 'social-share-button'
+# gem 'shareable'
+# gem 'font-awesome-rails'
+# gem 'bootstrap-social-rails'
+
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Use Uglifier as compressor for JavaScript assets

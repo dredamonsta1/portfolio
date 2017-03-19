@@ -1,51 +1,89 @@
 <!-- <h1>Andres#index</h1>
 <p>Find me in app/views/andres/index.html.erb</p> -->
 <!-- ************test******************* -->
+
+
+
+
   <div class="me">
-    <h1>Welcome to AndreWilkinson.com</h1>
-    <p> </p>
 
+    <h1><i class="fa fa-paper-plane" aria-hidden="true"></i>Welcome to AndreWilkinson.com</h1>
+    <p>When you think of the internet, what is the first thing that comes to mind? you can tweet me your answer</p>
   </div>
 
-<div class="about">
-<h6 class="resume"><a href='#resume'>Resume</a></h6>
-</div>
+<!-- <div class="about"> -->
+<!-- <p class="resume"><a href='#resume'>Resume</a></p> -->
+<!-- </div> -->
 
+
+<!-- <div class="fullstack"><p> -->
+  <!-- Im a full stack dev with a passion for this field, a bonsai enthusist and a sneaker collector</p> -->
+<!-- </div> -->
+
+ <!-- <div class="PD"> -->
+<!-- <%= link_to "here", asset_path("andrefullstackRa.pdf"), :class => "links" %> -->
+<!-- </div> -->
+
+<!-- <h6><a href='#resume'>Resume</a></h6> -->
+
+
+<div class="parallax"></div>
 <div class="about_res">
-<h1>this is a pdf version of my resume click take a look </h1>
+  <p>When I think of the internet, I think infrastructure, experiences and memories. The internet is the people and their interactions. As a full-stack developer, understanding these things can help me purvey an interesting and efficient side of the internet.</p>
+  <h3><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+  Resume</h3>
+    <p> click <%= link_to "here", asset_path("andrefullstackRa.pdf"), :class => "links" %> to take a look </p>
 </div>
+<div style="height:auto;background-color:white;font-size:36px">
 
-
- <div class="PD">
-<%= link_to "My Resume", asset_path("andrefullstackRa.pdf"), :class => "links" %>
 </div>
-
-<h6><a href='#resume'>Resume</a></h6>
-
-
 
 
 <div class="parallax"></div>
 
-<div style="height:500px;background-color:#FFECB3;font-size:36px">
-  <div class="fullstack">
-    Im a full stack dev with a passion for this field, a bonsai enthusist and a sneaker collector
+<div style="height:auto;background-color:black;font-size:36px">
+
+  <div class="dev-work">
+
+    <h1><i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i><span class="sr-only">Loading...</span></i>Projects</h1>
+    <p>
+A list of my up coming projects, will be updating.
+</p>
+  <div class="run">
+    <h4>shoerunners</h4>
+    <%= image_tag "sea_shoe.JPG", size: "100x100" %>
+  </div>
+  <div class="invest">
+    <h4>shortbags</h4>
+    <%= image_tag "sea_shoe.JPG", size: "100x100" %>
+  </div>
+
   </div>
 </div>
-<h6><a href='#tech'>Tech</a></h6>
-<%= image_tag "css_icon.png" %>
-<%= image_tag "ang_icon.png" %>
-<%= image_tag "djang_icon.png" %>
-
-
-<p>In this example we have turned off parallax scrolling for mobile devices. It works as expected on all desktop screens sizes.</p>
-<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
 
 <div class="parallax"></div>
-
-<div style="height:400px;background-color:red;font-size:36px">
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<!-- <h6><a href='#tech'>Tech</a></h6> -->
+<div class="tools">
+  <h3>Tools</h3>
 </div>
 
-<div class="parallax"></div>
+<div class="tech-icon">
+  <%= image_tag "css_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "ang_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "djang_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "flas_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "gith_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "html_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "jquer_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "js.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "mam_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "mongo_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "mysq_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "node_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "posgr_icon.png", :size => "50x50", :crop => :fill %>
+  <%= image_tag "pro_icon.jpeg", :size => "50x50", :crop => :fill %>
+  <%= image_tag "pytho_icon.jpeg", :size => "50x50", :crop => :fill %>
+  <%= image_tag "rails_icon.jpeg", :size => "50x50", :crop => :fill %>
+  <%= image_tag "ruby_icon.jpeg", :size => "50x50", :crop => :fill %>
+
+</div>
