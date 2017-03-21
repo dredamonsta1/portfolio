@@ -204,6 +204,7 @@ margin-bottom: 100px;
 z-index: 12;
 opacity: .9;
 position: fixed;
+box-shadow: 0 8px 6px -6px black;
 }
 
 // .navbar a{
@@ -283,7 +284,7 @@ body .bottombar {
 }
 .me {
   color: white;
-  background-color: black;
+  background-color: white;
   font-size: 3em;
   font-family: "quicksand", sans-serif;
   // border: 2px dotted blue;
@@ -292,11 +293,13 @@ body .bottombar {
 }
 .me p{
   font-size: .5em;
-  color: white;
+  color: black;
+}
+.me h1{
+  color: black;
 }
 .me i{
   font-size: .1em;
-
 }
 
 .about{
@@ -347,15 +350,15 @@ body .bottombar {
   text-align: center;
 }
 .dev-work p{
-  color: white;
+  color: black;
   font-size: 1em;
 
 }
 .dev-work h1{
-  color: white;
+  color: black;
 }
 .run h4{
-  color: white;
+  color: black;
 }
 .run{
   text-align: left;
@@ -363,7 +366,7 @@ body .bottombar {
 }
 
 .invest h4{
-  color: white;
+  color: black;
 }
 .invest{
   text-align: right;
