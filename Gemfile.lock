@@ -96,6 +96,9 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
+    passenger (5.1.2)
+      rack
+      rake (>= 0.8.1)
     pdfjs_viewer-rails (0.0.9)
       rails (> 4.2.0)
       sass-rails (~> 5.0)
@@ -191,6 +194,7 @@ DEPENDENCIES
   jquery-rails
   json (~> 1.8.1)
   paperclip (~> 4.3, >= 4.3.6)
+  passenger (>= 5.0.25)
   pdfjs_viewer-rails
   pg
   rails (= 4.2.7.1)
